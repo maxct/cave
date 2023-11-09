@@ -10,39 +10,42 @@
         }
         .container {
             height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            width: 100vw;
+            /* display: flex; */
+            /* justify-content: center; */
+            /* align-items: center; */
             background-image: url('https://cavewoman.de/wp-content/uploads/2011/06/bg_body.gif');
             background-size: cover;
         }
+        .content {
+
+        }
         h1 {
-            text-align: center; /* Center the text */
+            position: absolute;
+            /*text-align: center;  Center the text */
             color: white;
+            transform: translate(50vw, 20vh) translate(-50%, 0%);
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             font-family: 'Rock Salt', cursive; /* Apply a caveman-related font */
             cursor: pointer; /* Add pointer cursor to indicate it's clickable */
         }
         .date-container {
             position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            text-align: center;
-            font-family: 'Rock Salt', cursive; /* Apply the same font as h1 */
+            transform: translate(50vw, 50vh) translate(-50%);
+            font-family: 'Rock Salt', bold; /* Apply the same font as h1 */
         }
         .date {
             font-size: 18px;
             color: white;
-            margin: 0 10px;
-            display: inline-block;
-            transform: translateX(-50%);
+            position: absolute;
+            text-wrap: nowrap;
         }
         .bottom-image {
+            width: 33vw;
             position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
+            transform: translate(50vw, 50vh) translate(-50%, -40%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+            
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
@@ -52,14 +55,13 @@
         <div class="content">
             <h1><a href="mailto:me@here.com?subject=Hello&body=I'm contacting you about Cave Night.">Hier gibt's Termine:</a></h1>
             <div class="date-container">
-                <div class="date" style="transform: rotate(0deg) translateX(150px) translateY(30px);">So, 12.11.23</div>
-                <div class="date" style="transform: rotate(45deg) translateX(150px) translateY(30px);">Fr, 29.12.23</div>
-                <div class="date" style="transform: rotate(90deg) translateX(150px) translateY(30px);">So, 04.02.24</div>
-                <div class="date" style="transform: rotate(135deg) translateX(150px) translateY(30px);">So, 28.04.24</div>
-                <div class="date" style="transform: rotate(180deg) translateX(150px) translateY(30px);">So, 23.06.24</div>
-                <div class="date" style="transform: rotate(225deg) translateX(150px) translateY(30px);">Mi, 17.07.24</div>
-                <div class="date" style="transform: rotate(270deg) translateX(150px) translateY(30px);">So, 25.08.24</div>
-                <div class="date" style="transform: rotate(315deg) translateX(150px) translateY(30px);">So, 03.11.24</div>
+                <div class="date" style="transform: translate(-50%,-50%) rotate(180deg) translate(33vw) rotate(-180deg);">Fr, 29.12.23</div>
+                <div class="date" style="transform: translate(-50%,-50%) rotate(150deg) translate(33vw) rotate(-150deg);">So, 04.02.24</div>
+                <div class="date" style="transform: translate(-50%,-50%) rotate(120deg) translate(33vw) rotate(-120deg);">So, 28.04.24</div>
+                <div class="date" style="transform: translate(-50%,-50%) rotate(90deg) translate(33vw) rotate(-90deg);">So, 23.06.24</div>
+                <div class="date" style="transform: translate(-50%,-50%) rotate(60deg) translate(33vw) rotate(-60deg);">Mi, 17.07.24</div>
+                <div class="date" style="transform: translate(-50%,-50%) rotate(30deg) translate(33vw) rotate(-30deg);">So, 25.08.24</div>
+                <div class="date" style="transform: translate(-50%,-50%) rotate(0deg) translate(33vw) rotate(-0deg);">So, 03.11.24</div>
             </div>
             <img class="bottom-image" src="https://cavewoman.de/wp-content/uploads/2020/01/CAVEWOMAN_A5_hoch_mit_Claim_web_215px.png" alt="Cavewoman Image">
         </div>
