@@ -43,6 +43,11 @@
             text-wrap: nowrap;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        .mouse {
+            width: 50vw;
+            transform: translate(50vw, 80vh) translate(-34%, -50%);
+            clip-path: polygon(0 0, 65% 0, 65% 100%, 0 100%);
+        }
         .bottom-image {
             width: 33vw;
             position: absolute;
@@ -50,13 +55,27 @@
             animation-duration: 5s;
             animation-name: extendImg;
             /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%); */
-            
+        }
+        .ticket {
+            width: 33vw;
+            position: absolute;
+            transform: translate(50vw, 50vh) translate(-50%, -40%);
         }
         @keyframes extendImg {
             from {
+                transform: translate(50vw, 50vh) translate(-50%, -40%);
                 clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
             }
+            33% {
+                transform: translate(50vw, 50vh) translate(-50%, -40%) scale(200%);
+                clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+            }
+            66% {
+                transform: translate(50vw, 50vh) translate(-50%, -40%) scale(200%);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
             to {
+                transform: translate(50vw, 50vh) translate(-50%, -40%);
                 clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             }
         }
@@ -78,6 +97,9 @@
             
             <img class="bottom-image" src="https://cavewoman.de/wp-content/uploads/2020/01/CAVEWOMAN_A5_hoch_mit_Claim_web_215px.png" alt="Cavewoman Image">
         </div>
+        <img class="ticket one" src="https://www.eventim.de/obj/media/DE-eventim/teaser/fantickets/cavewomen-tickets-ft.jpg">
+        <img class="ticket two" src="https://www.eventim.de/obj/media/DE-eventim/teaser/fantickets/cavewomen-tickets-ft.jpg">
+        <img class="mouse" src="https://wuehlmaeuse.de/wp-content/uploads/2020/02/theme-header-logo.png">
     </div>
 </body>
 </html>
