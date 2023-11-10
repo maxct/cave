@@ -44,12 +44,22 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         .mouse {
-            width: 50vw;
-            transform: translate(50vw, 80vh) translate(-34%, -50%);
+            position: absolute;
+            width: 75vw;
+            /* visibility: hidden; */
+            transform: translate(67vw, 82vh) translate(-34%, -50%);
+            /* transform: translate(50vw, -10vh) translate(-34%, -50%); */
             clip-path: polygon(0 0, 65% 0, 65% 100%, 0 100%);
         }
+        .logo {
+            position: absolute;
+            width: 15vw;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+            transform: translate(33vw, 82vh) translate(-50%, -50%);
+        }
         .bottom-image {
-            width: 33vw;
+            z-index: 999;
+            width: 50vw;
             position: absolute;
             transform: translate(50vw, 50vh) translate(-50%, -40%);
             animation-duration: 5s;
@@ -57,16 +67,26 @@
             /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%); */
         }
         .ticket {
-            width: 33vw;
+            width: 30vw;
             position: absolute;
-            transform: translate(50vw, 50vh) translate(-50%, -40%);
+            transform: translate(80vw, 83vh) translate(-50%, -40%) skew(154deg, 199deg) rotate(285deg);
+        }
+        .one {
+            box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.791);
+            transform: translate(78vw, 83vh) translate(-50%, -40%) skew(154deg, 199deg) rotate(306deg);
+        }
+        .block {
+            /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+            width: 44vw;
+            position: absolute;
+            transform:  translate(22vw, 85vh) translate(-50%, -50%) skew(331deg, 34deg);
         }
         @keyframes extendImg {
             from {
                 transform: translate(50vw, 50vh) translate(-50%, -40%);
                 clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
             }
-            33% {
+            10% {
                 transform: translate(50vw, 50vh) translate(-50%, -40%) scale(200%);
                 clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
             }
@@ -94,11 +114,13 @@
     <div class="container">
         <div class="content">
             <h1>Hier sind die Details</h1>
-            
             <img class="bottom-image" src="https://cavewoman.de/wp-content/uploads/2020/01/CAVEWOMAN_A5_hoch_mit_Claim_web_215px.png" alt="Cavewoman Image">
+            
         </div>
         <img class="ticket one" src="https://www.eventim.de/obj/media/DE-eventim/teaser/fantickets/cavewomen-tickets-ft.jpg">
         <img class="ticket two" src="https://www.eventim.de/obj/media/DE-eventim/teaser/fantickets/cavewomen-tickets-ft.jpg">
+        <img class="block" src="https://shop.block-house.de/INTERSHOP/static/WFS/BlockHouse-ConsumerDE-Site/-/BlockHouse/de_DE/Produktbilder/Main-View/Gutschein_BHR_24050_Main_L_580x450.webp">
+        <img class="logo" src="https://shop.block-house.de/INTERSHOP/static/WFS/BlockHouse-ConsumerDE-Site/-/BlockHouse-ConsumerDE-blockhouse-b2c-de/de_DE/bh-logo.webp">
         <img class="mouse" src="https://wuehlmaeuse.de/wp-content/uploads/2020/02/theme-header-logo.png">
     </div>
 </body>
