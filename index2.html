@@ -46,7 +46,7 @@
             width: 33vw;
             position: absolute;
             transform: translate(50vw, 50vh) translate(-50%, -40%);
-            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%);
+            /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 80%); */
             
         }
         /* --- Required CSS (not customizable) --- */
@@ -110,9 +110,8 @@
     <script>
         function handleClick() { 
             // _gaq.push(['_trackEvent', 'emails', 'clicked', 'lead']); //first this
-            window.location.href = "mailto:booking@tippabble.com?subject=Ich nehme den 29.12.2023&body=Einfach auf Senden drücken :-)"
-            window.location.href = '#modal'; //or window.location for redirection
             console.log("well")
+            window.location = 'https://google.com'; //or window.location for redirection
             }
     </script>
     <div class="container">
@@ -120,7 +119,7 @@
             <h1><a onclick="handleClick()" href="mailto:booking@tippabble.com?subject=Ich nehme den 29.12.2023&body=Einfach auf Senden drücken :-)">Hier gibt's Termine:</a></h1>
             <div class="date-container">
                 <div class="date" style="transform: translate(-50%,-50%) rotate(180deg) translate(33vw) rotate(-180deg);"><a href="#modal">Fr, 29.12.2023</a></div>
-                <div class="date" style="transform: translate(-50%,-50%) rotate(150deg) translate(33vw) rotate(-150deg);"><a onclick="handleClick()">So, 04.02.2024</a></div>
+                <div class="date" style="transform: translate(-50%,-50%) rotate(150deg) translate(33vw) rotate(-150deg);"><a href="">So, 04.02.2024</a></div>
                 <div class="date" style="transform: translate(-50%,-50%) rotate(120deg) translate(33vw) rotate(-120deg);">So, 28.04.2024</div>
                 <div class="date" style="transform: translate(-50%,-50%) rotate(90deg) translate(33vw) rotate(-90deg);">So, 23.06.2024</div>
                 <div class="date" style="transform: translate(-50%,-50%) rotate(60deg) translate(33vw) rotate(-60deg);">Mi, 17.07.2024</div>
@@ -134,7 +133,7 @@
         <a href="#" class="modal__overlay" aria-label="Close modal"></a>
         <div class="modal__content">
           <a href="#" class="modal__close" aria-label="Close modal">&times;</a>
-          <div><a href="https://maxct.github.io/cave/index2.html">Wenn gesendet drücke hier</a></div>
+          <div>Modal content</div>
         </div>
       </div>
 </body>
