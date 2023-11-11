@@ -23,15 +23,16 @@
         }
         h1 {
             position: absolute;
-            font-size:3.5vw;
+            font-size:1.5vh;
             /* margin: 5vw; */
             width: 80vw;
+            max-height: 30vh;
             text-align: center;
             color: #FFFFFF;
             transform: translate(50vw, 0vh) translate(-50%, 0%);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-            font-family: 'Rock Salt', cursive; /* Apply a caveman-related font */
-            cursor: pointer; /* Add pointer cursor to indicate it's clickable */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            font-family: 'Rock Salt';
+            /* , cursive; Apply a caveman-related font */
         }
         .date-container {
             position: absolute;
@@ -83,6 +84,15 @@
             position: absolute;
             transform:  translate(68vw, 85vh) translate(-50%, -50%) skew(331deg, 34deg);
         }
+        .shipping {
+            /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+            filter: invert(1);
+             /* drop-shadow(1px, 1px, 2px, black); */
+            opacity: 60%;
+            width: 16vw;
+            position: absolute;
+            transform: translate(50vw, 92vh) translate(-50%, -50%);
+        }
         @keyframes extendImg {
             from {
                 transform: translate(50vw, 50vh) translate(-50%, -40%);
@@ -129,6 +139,7 @@
         <img class="block" src="https://shop.block-house.de/INTERSHOP/static/WFS/BlockHouse-ConsumerDE-Site/-/BlockHouse/de_DE/Produktbilder/Main-View/Gutschein_BHR_24050_Main_L_580x450.webp">
         <img class="logo" src="https://shop.block-house.de/INTERSHOP/static/WFS/BlockHouse-ConsumerDE-Site/-/BlockHouse-ConsumerDE-blockhouse-b2c-de/de_DE/bh-logo.webp">
         <img class="mouse" src="https://wuehlmaeuse.de/wp-content/uploads/2020/02/theme-header-logo.png">
+        <img class="shipping" src="https://cdn.shopify.com/s/files/1/0644/0094/9484/files/delivery-truck-loading-exporting-v2_beae1ef9-38d5-4aa6-8af8-27ce59b0e86c.gif">
     </div>
 </body>
 </html>
